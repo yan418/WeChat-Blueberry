@@ -1,0 +1,34 @@
+<!--pages/movie/movie.wxml-->
+<import src="./movie-lists-template/movie-lists-template.wxml" />
+ <import src="./movie-list-template/movie-list-template.wxml"/>
+
+
+<view class="search">
+    <!-- 
+        微信提供的小图标
+        type 类型success, success_no_circle, info, warn, waiting, cancel, download, search, clear
+    -->
+    <icon  type="search" size="13" class="search-img"></icon>
+    <input type="text"   value='{{content}}' bindinput="talks"  placeholder="长城" class="inputin" bindfocus="doFocus" bindblur="doblur" bindconfirm="doConfirm" />
+    <icon  type="clear"  size="15" class="clear-img" catchtap="doClear" wx:if="{{isIocn}}"></icon>
+</view>
+
+
+<view class='movie' wx:if="{{isShowView}}">
+  <template is="movie-lists" data="{{...movieOne}}"></template>
+  <template is="movie-lists" data="{{...movieTwo}}"></template> 
+  <template is="movie-lists" data="{{...movieThree}}"></template>
+</view>
+
+<view class='movie' wx:if="{{!isShowView}}">
+
+    <view class='movie-box'> 
+      <view class='middle'>
+          
+        <block wx:for="{{searchArr}}" wx:for-item="item" wx:key="movie-list">
+            <template is="movie-list" data="{{...item}}"></template>
+        </block>    
+        
+      </view>
+   </view>
+</view>

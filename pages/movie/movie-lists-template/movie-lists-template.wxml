@@ -1,0 +1,20 @@
+  <!-- 电影分类模板  即将上映 正在热映.... -->
+ <import src="../movie-list-template/movie-list-template.wxml"/>
+
+  <template name="movie-lists">
+  
+      <view class='movie-box'>
+          <view class='top' catchtap="goToMorePage" data-more="{{title}}">
+              <text>{{title}}</text>
+              <view class='more' >更多></view>
+          </view> 
+          <view class='middle'>
+              
+              <block wx:for="{{data}}" wx:for-item="item" wx:key="movie-list">
+                  <template is="movie-list" data="{{...item}}"></template>
+              </block>
+            
+          </view>
+      </view>
+
+  </template>

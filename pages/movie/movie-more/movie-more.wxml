@@ -1,0 +1,15 @@
+<!--pages/movie/movie-more/movie-more.wxml-->
+
+
+<import src="../movie-list-template/movie-list-template.wxml"/>
+
+<view class='movie-box'>
+ 
+    <view class='middle'>
+        
+        <block wx:for="{{data}}" wx:for-item="item" wx:key="movie-list">
+            <template is="movie-list" data="{{...item}}"></template>
+        </block>
+      
+    </view>
+</view>

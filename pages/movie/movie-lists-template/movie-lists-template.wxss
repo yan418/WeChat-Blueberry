@@ -1,0 +1,15 @@
+
+.movie-box{
+  padding: 8px 0;
+}
+.movie-box .top{
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;   /*相当于 右浮动*/
+  padding: 0px 18px;
+}
+.movie-box .top .more{
+  color: blue; 
+}
+
+@import '../movie-list-template/movie-list-template.wxss'

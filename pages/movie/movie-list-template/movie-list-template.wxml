@@ -1,0 +1,13 @@
+  <!-- 电影单个列表 -->
+  
+  <import src="../movie-star-template/movie-star-template.wxml" />
+
+  <template name="movie-list">
+  
+      <view class='list' data-id="{{id}}"  catchtap="goInfo">
+        <image src='{{image}}'></image>
+        <text class='title'>{{title}}</text>
+        <template is="movie-star" data="{{...stars}}"></template>
+      </view>
+
+  </template>

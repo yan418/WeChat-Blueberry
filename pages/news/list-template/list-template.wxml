@@ -1,0 +1,24 @@
+ 
+ <!-- 定义模板  引用需要  import -->
+ <template name="list-template" >
+
+  <view class='new-list'>
+        <view class='list-top'>
+          <image src='{{authorIcon}}'/>
+          <text>{{authorName}}</text>
+          <text>{{authorDate}}</text>
+        </view>
+        <view class='list-title'>{{title}}</view>
+        <view class='list-img'><image src='{{articleImg}}'/></view>
+        <view class='list-article'>{{articleminText}}</view>
+        <view class='list-base'>
+            <view>
+                <image src='../images/sc.png'></image><text>{{articleLikeComment}}</text>
+            </view>
+            <view>
+                <image src='../images/fx.png'></image><text>{{articleLikeSC}}</text>
+            </view>
+        </view>
+    </view>  
+
+</template>

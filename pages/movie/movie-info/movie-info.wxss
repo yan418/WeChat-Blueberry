@@ -1,0 +1,118 @@
+/* pages/movie/movie-info/movie-info.wxss */
+
+.movie-info{
+  display:flex;
+  flex-direction: column;
+}
+.head-img{
+  width: 100%;
+  filter: blur(2rpx);  /* 模糊 */
+  height: 320rpx;
+}
+.head-img-hover{
+  position: absolute;
+  top: 0;
+  z-index: 6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 80rpx;
+  color: white;
+}
+.head-img-hover .main-title{
+  font-size: 19px;
+  color:#fff;
+  font-weight:bold; 
+  margin-top: 75rpx;
+  letter-spacing: 2px;
+}
+.head-img-hover .sub-title{
+  font-size: 28rpx;
+  color:#fff;
+  margin-top: 30rpx;
+}
+
+
+.movie-img{
+  position: absolute;
+  height:238rpx;
+  width: 175rpx;
+  top:160rpx;
+  right: 30rpx;
+}
+
+.summary{
+  background: #F2F1F2;
+  padding: 40rpx;
+}
+.original-title{
+    color: #1f3463;
+    font-size: 24rpx;
+    font-weight: bold;
+    margin-bottom: 40rpx;
+}
+.flex-row{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 10rpx;
+}
+.mark{
+    margin-right: 30rpx;
+    white-space:nowrap;
+    color: #999999;
+}
+
+.synopsis{
+  border-top:1px solid #E2E1E2;
+  border-bottom:1px solid #E2E1E2;  
+  background: #F2F1F2;
+  display:flex;
+  flex-direction: column;
+  padding: 40rpx 50rpx;
+}
+.synopsis-font{
+  color:#999;
+}
+.summary-content{
+  margin-top: 20rpx;
+  margin-right: 40rpx;
+  line-height:40rpx;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+
+.cast{
+  background: #F2F1F2;
+  display:flex;
+  flex-direction: column;
+  padding: 40rpx 50rpx;
+}
+.cast-container-box{
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px; 
+}
+.cast-container{
+    display:inline-flex;
+    flex-direction: column;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    white-space: normal;
+    margin-left: -30rpx;
+}
+.cast-img{
+    width: 170rpx;
+    height: 210rpx;
+}
+.cast-name{
+   display: block;
+   font-size: 14px;
+   margin-top: 5px;
+}
+
+@import '../movie-list-template/movie-list-template.wxss'

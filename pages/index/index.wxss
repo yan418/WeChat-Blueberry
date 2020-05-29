@@ -1,0 +1,30 @@
+/**index.wxss**/
+.home{
+  display: flex;
+  flex-direction: column; /*垂直排列*/
+  align-items: center;
+  font-size: 16px;
+}
+
+
+/* 1rpx = 0.5px  1px =2rpx */
+.home image{
+  width: 310rpx;
+  height: 85rpx;
+  margin: 35px 0px;
+}
+
+.home text{
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.show-btn{
+  margin-top: 120px;
+  border: 1px solid #109d59;
+  border-radius: 5px;
+  box-shadow:1px -1px 0px #109d59;
+  padding: 8px 20px;
+  width: 40%;
+  text-align: center
+}

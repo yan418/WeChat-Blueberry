@@ -1,0 +1,15 @@
+
+<!-- 电影的 小星星 -->
+<template name="movie-star">
+
+  <view class='evaluate'>  
+      <view class='star'>
+        <block wx:for="{{arr}}" wx:for-item="item" wx:key="star">
+           <image  wx:if="{{item}}" src='/pages/images/star.png'   class="starimg"></image>
+           <image  wx:else="{{item}}" src='/pages/images/chat.png' class="starimg"></image>
+        </block>
+      </view>
+      <text>{{stat}}</text>
+  </view>
+
+</template>

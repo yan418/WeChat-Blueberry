@@ -1,0 +1,24 @@
+<!--pages/news/new-info/new-info.wxml-->
+<view class='new-info'>
+    <image src='{{articleImg}}' class="banner"></image>
+    <view class='lnfo'>
+      <view class='list-top'>
+        <image src='{{authorIcon}}'/>
+        <text>{{authorName}}</text>
+        发布于
+        <text>{{authorDate}}</text>
+        <view class="music" catchtap='playMusic' >
+          <image src='{{isMusic ? "../../images/earphone.png" :"../../images/eartag.png" }}'></image>
+        </view>
+      </view>
+      <view class='list-title'>{{title}}</view>
+      <view class="review"> 
+          <view catchtap='doComment'><image src='../../images/fx.png'></image></view>
+          <view wx:if="{{isState}}" catchtap='doCollect'><image src='../../images/sch.png'></image></view>
+          <view wx:else="{{isState}}" catchtap='doCollect'><image src='../../images/sc.png'></image></view>
+      </view>
+      <view class='list-article'>{{articleText}}</view>
+    </view>
+    <!-- 按钮转发 -->
+    <button type="primary"  open-type="share" data-name="pageShare" >分享</button>
+</view>

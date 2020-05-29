@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/movie/movie",
+    "pages/movie/movie-info/movie-info",
+    "pages/movie/movie-more/movie-more",
+    "pages/news/news",
+    "pages/news/new-info/new-info"
+
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white",
+    "disableScroll": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/news/news",
+        "iconPath": "pages/images/sch.png",
+        "selectedIconPath": "pages/images/sc.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "iconPath": "pages/images/eartag.png",
+        "selectedIconPath": "pages/images/earphone.png"
+      }
+    ],
+    "color": "black",
+    "selectedColor": "#109d59",
+    "borderStyle": "white",
+    "position": "bottom"
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

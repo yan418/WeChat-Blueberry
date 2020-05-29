@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class='home'>
+  <image src='../images/logo.png'></image>
+  <text>hellow,iwen</text>
+  <view class='show-btn' bindtap='jumpGoNews'>一起分享美好时光</view>
+</view>

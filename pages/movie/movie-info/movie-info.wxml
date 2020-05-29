@@ -1,0 +1,58 @@
+<!--pages/movie/movie-info/movie-info.wxml-->
+
+<import src="../movie-star-template/movie-star-template.wxml"/>
+
+<view class="movie-info">
+
+  <image class="head-img" src="{{movieImg}}" />
+
+  <view class="head-img-hover" >
+    <text class="main-title">{{original_title}}</text>
+    <text class="sub-title">{{countries}} . {{year}}</text>
+  </view>
+
+  <image class="movie-img" src="{{movieImg}}"/>
+  
+  <view class="summary">
+    <view class="original-title">
+      <text>{{title}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">评分</text>
+      <template is="movie-star" data="{{...stars}}"></template>
+    </view>
+    <view class="flex-row">
+      <text class="mark">导演</text>
+      <text>{{directors}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">影人</text>
+      <text>{{figure}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">类型</text>
+      <text>{{generes}}</text>
+    </view>
+  </view>
+
+  <view class="synopsis">
+    <text class="synopsis-font">剧情简介</text>
+    <text class="summary-content">{{summary}} </text>
+  </view>
+
+  <view class="cast">
+    <text class="cast-font"> 影人</text>
+  
+    <scroll-view class="cast-container-box" scroll-x="true">
+        <block wx:for="{{arrFigure}}" wx:for-item="item" wx:key="arrFigure">       
+          <view class="cast-container">
+            <image class="cast-img" src="{{item.avatars.large}}"></image>
+            <text class="cast-name">{{item.name}}</text>
+          </view>
+        </block>
+    </scroll-view>
+
+
+  </view>
+
+</view>

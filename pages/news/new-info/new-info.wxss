@@ -1,0 +1,51 @@
+/* pages/news/new-info/new-info.wxss */
+
+.new-info .lnfo{
+  padding: 0px 14px;
+}
+.new-info .banner{
+  width: 100%;
+  display: block
+}
+.new-info .list-top{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 12px 0px 10px 0px;
+}
+.list-top image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.list-top text{
+  margin: 0px 10px;
+}
+.list-top .music image{
+  width: 25px;
+  height: 25px;
+  margin-left: 8px;
+}
+.list-title{
+  font-weight: bold;
+  font-size: 18px;
+  margin: 4px 0px;
+}
+.review{
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+.review  image{
+  width: 20px;
+  height: 20px;
+  margin-right: 18px;
+}
+.list-article{
+  font-size: 15px;
+  color: #D1D0D1;
+  margin-top: 10px;
+  border-top:1px solid #D1D0D1;
+  padding: 10px 0px 25px 0px; 
+}

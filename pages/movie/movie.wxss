@@ -1,0 +1,25 @@
+.movie{
+
+}
+
+@import './movie-lists-template/movie-lists-template.wxss'
+
+.search{
+   background: #F2F1F2;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 10px 8px;
+ }
+ .search .search-img{
+   width: 20px;
+   padding-right: 10px;
+ }
+
+ .search .inputin{
+   width: 100%;
+  }
+
+.search .clear-img{
+  width: 30px;
+}

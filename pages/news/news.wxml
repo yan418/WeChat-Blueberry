@@ -1,0 +1,30 @@
+<import src="./list-template/list-template.wxml"/>
+
+
+<!--pages/news/news.wxml-->
+<view class='news'>
+   
+
+   <!-- 焦点图 -->
+   <swiper indicator-dots="{{swiper.indicatorDots}}" 
+           indicator-active-color="{{swiper.indicatorA}}"
+           autoplay="{{swiper.autoplay}}"
+           interval="{{swiper.interval}}" >
+      <swiper-item><image src="../images/banner1.jpg" class="slide-image" /></swiper-item>
+      <swiper-item><image src="../images/banner2.jpg" class="slide-image" /></swiper-item>
+      <swiper-item><image src="../images/banner3.jpg" class="slide-image" /></swiper-item>
+  </swiper>
+
+
+  <!-- 新闻列表 -->
+  <view class='new-ul'>        
+
+      <!-- wx:for就是遍历数组 -->
+      <block wx:for="{{news}}"  wx:for-item="item" wx:key="new">
+         <view catchtap='jumpGoNewInfo' data-newId="{{item.newsid}}" class='lacuna'>
+            <template is="list-template" data="{{...item}}"></template>
+         </view>
+      </block>
+      
+  </view>
+</view>

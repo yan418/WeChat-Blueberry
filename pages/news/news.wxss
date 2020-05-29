@@ -1,0 +1,20 @@
+/* pages/news/news.wxss */
+.news{
+  background: #F2F1F2;
+}
+
+.news swiper image{
+  width: 100%;
+}
+
+
+/* css 引入样式 */
+@import "./list-template/list-template.wxss"
+
+
+.lacuna{
+  margin-top: 20px;
+}
+.lacuna:first-child{
+  margin-top: 0px;
+}

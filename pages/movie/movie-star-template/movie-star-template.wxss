@@ -1,0 +1,12 @@
+
+.evaluate{
+   display: flex;
+   flex-direction: row;
+}
+.evaluate text{
+   padding-left: 12px;
+}
+.starimg{
+   width: 12px !important;
+   height: 12px !important;
+}

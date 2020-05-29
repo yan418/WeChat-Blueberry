@@ -1,0 +1,13 @@
+/* pages/movie/movie-more/movie-more.wxss */
+
+.movie-more{
+
+}
+
+
+@import '../movie-list-template/movie-list-template.wxss'
+
+.box{
+ // border: 1px solid rebeccapurple;
+  //background: blue;
+}
